@@ -26,16 +26,8 @@ DQN_POLICIES = {
 scenario = 15
 
 if __name__ == "__main__":
-    if scenario == 1:
-        env = nasim.load("scenarios/benchmark/penbox_scenario1.yaml")
-    if scenario == 2:
-        env = nasim.load("scenarios/benchmark/penbox_scenario2.yaml")
-    if scenario == 3:
-        env = nasim.load("scenarios/benchmark/penbox_scenario3.yaml")
-    if scenario == 14:
-        env = nasim.load("scenarios/benchmark/penbox_traint_4_static.yaml")
-    if scenario == 15:
-        env = nasim.load("scenarios/benchmark/s1_rotation/s1_r_a_2.yaml")
+    #Change Envirnoment 
+    env = nasim.load("scenarios/own_S/Own_S.yaml")
 
 
     line_break = f"\n{'-' * 60}"
