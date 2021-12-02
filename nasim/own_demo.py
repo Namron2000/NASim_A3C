@@ -27,7 +27,7 @@ scenario = 15
 
 if __name__ == "__main__":
     #Change Envirnoment 
-    env = nasim.load("nasim\scenarios\own_S\Permutations\Own_S_14.yaml")
+    env = nasim.load("../nasim/scenarios/own_S/Permutations/Own_S_0.yaml")
 
 
     line_break = f"\n{'-' * 60}"
