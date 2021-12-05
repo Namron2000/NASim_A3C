@@ -1,0 +1,47 @@
+commit 21fe2371e90c47fe504090fe0784738e7ad78916
+Author: EmyLIEUTAUD <67641786+EmyLIEUTAUD@users.noreply.github.com>
+Date:   Wed Dec 1 17:32:14 2021 +0200
+
+    A3C agent updated but not working
+
+commit c6ed48e90a129845a3a24361d24285e93aefed87
+Author: EmyLIEUTAUD <67641786+EmyLIEUTAUD@users.noreply.github.com>
+Date:   Mon Nov 22 19:48:49 2021 +0200
+
+    Add files via upload
+
+commit 5d06b94e08263ccf6c378be7e3397b972c97594d
+Author: EmyLIEUTAUD <emylieutaud@gmail.com>
+Date:   Wed Nov 17 18:04:49 2021 +0200
+
+    all permutations of the environment are added
+
+commit e77a3e68612c9bf2713cb4f28d7bce52e1bdb4c5
+Author: EmyLIEUTAUD <emylieutaud@gmail.com>
+Date:   Wed Nov 17 17:26:08 2021 +0200
+
+    config updated
+
+commit 8b916570d43fceb82391f65c005a101a53fb01d1
+Author: EmyLIEUTAUD <emylieutaud@gmail.com>
+Date:   Wed Nov 17 17:17:48 2021 +0200
+
+    configuration of the environment
+
+commit b8c207306dd99ea9cda71d9ca8ddba4b284e82ab
+Author: Namron2000 <nb00@gmx.net>
+Date:   Wed Nov 17 17:15:47 2021 +0200
+
+    add basic functions
+
+commit bb1be40520cf5381a6b08877f4549717b33fec3e
+Author: Namron2000 <nb00@gmx.net>
+Date:   Wed Nov 17 16:47:50 2021 +0200
+
+    add files
+
+commit 1f023454c85fc3d0c7c98a2ccdc44c2490951e73
+Author: Namron2000 <nb00@gmx.net>
+Date:   Wed Nov 17 16:37:05 2021 +0200
+
+    init
