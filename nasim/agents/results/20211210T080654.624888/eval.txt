@@ -1,0 +1,31 @@
+Trained on 4 environments 1 000 000 steps a3c.A3C(model, opt, t_max=args.t_max, gamma=0.99, beta=args.beta, act_deterministically=False)
+Environment: 0
+/home/kali/.local/lib/python3.9/site-packages/chainerrl/functions/mellowmax.py:60: RuntimeWarning: overflow encountered in exp
+  return np.sum(np.exp(y * adv) * adv)
+INFO:chainerrl.experiments.evaluator:evaluation episode 0 length:3 R:291.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 1 length:3 R:291.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 2 length:3 R:291.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 3 length:8 R:278.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 4 length:26 R:224.0
+n_runs: 5 mean: 275.0 median: 291.0 stdev 29.06028217344078
+Environment: 1
+INFO:chainerrl.experiments.evaluator:evaluation episode 0 length:4 R:288.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 1 length:4 R:288.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 2 length:4 R:288.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 3 length:3 R:291.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 4 length:4 R:288.0
+n_runs: 5 mean: 288.6 median: 288.0 stdev 1.3416407864998738
+Environment: 2
+INFO:chainerrl.experiments.evaluator:evaluation episode 0 length:3 R:291.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 1 length:3 R:291.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 2 length:3 R:291.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 3 length:3 R:291.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 4 length:3 R:291.0
+n_runs: 5 mean: 291.0 median: 291.0 stdev 0.0
+Environment: 3
+INFO:chainerrl.experiments.evaluator:evaluation episode 0 length:4 R:288.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 1 length:5 R:285.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 2 length:4 R:288.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 3 length:4 R:288.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 4 length:4 R:288.0
+n_runs: 5 mean: 287.4 median: 288.0 stdev 1.3416407864998738
