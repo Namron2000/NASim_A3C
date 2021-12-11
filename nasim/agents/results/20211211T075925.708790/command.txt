@@ -1,0 +1,1 @@
+a3c_agent.py 24 --eval-interval 500 --eval-n-runs 5 --steps 8000000 --t-max 500 --arch FFMellowmax --num-env 24
