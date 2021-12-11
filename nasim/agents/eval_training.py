@@ -2,50 +2,46 @@
 import matplotlib.pyplot as plt
 import numpy as np
 from scipy.interpolate import make_interp_spline
+from sklearn.linear_model import RANSACRegressor
+from sklearn.linear_model import LinearRegression
+from sklearn.preprocessing import PolynomialFeatures
+from scipy.signal import savgol_filter
+filepath = "./results/trained on 2 envs not det/scores.txt"
 
-filepath = "./results/20211210T045454.583853/scores.txt"
-steps = []
-min = []
-max = []
-median = []
-
-with open(filepath, 'r') as f:
-    next(f)
-    for line in f:
-        values = line.split()
-        steps.append(values[0])
-        min.append(values[7])
-        max.append(values[6])
-        median.append(values[4])
-
-
-
-X_Y_Spline = make_interp_spline(steps, min)
-
-steps_new = np.linspace(0,1000000,500)
-min_s = X_Y_Spline(steps_new)
-#max_s = interp1d(steps,max,steps_new)
-#median_s = interp1d(steps,median,steps_new)
-
+#this is literally not necessary but np > python
+file = open(filepath, 'r')
+#skip headers
+file.readline()
+data = np.loadtxt(file)
+xt = data[:,0]
+median = data[:,4]
+min = data[:,7]
+max = data[:,6]
 """
-min_s = min.ewm(alpha=(1-0.85)).mean()
-max_s = max.ewm(alpha=(1-0.85)).mean()
-median_s = median.ewm(alpha=(1-0.85)).mean()
+#code to make different smooth lines from median to see difference in different window sizes
+ypreds = []
+for i in range(21,202,50):
+    ypreds.append(savgol_filter(median, i, 3))
 """
+"""
+#code to visualize those different smooth lines (one window per view)
+for i,ypred in enumerate(ypreds):
+    f = plt.figure(figsize=(10,5))
+    plt.plot(xt, data[:,4])
+    #plt.plot(xt, data[:,6])
+    #plt.plot(xt, data[:,7])
+    plt.plot(xt,ypred)
+plt.show()
+"""
+#1001 is an arbitrary number. The higher it is the smoother the curve. Also it must be odd.
+smooth_median = savgol_filter(median, 1001, 3)
+smooth_min = savgol_filter(min, 1001, 3)
+smooth_max = savgol_filter(max, 1001, 3)
 
-plt.plot(steps, min_s, color='g', label='min')
-plt.plot(steps, min, color='g',alpha=.2)
-
-#plt.plot(steps, max_s, color='b', label='max')
-#plt.plot(steps, max, color='b',alpha=.2)
-
-#plt.plot(steps, median, color='r',alpha=.2)
-#plt.plot(steps, median_s, color='r', label='median')
-
-
-ax = plt.gca()
-ax.axes.xaxis.set_ticks([50,100,150,200,250,300])
-ax.axes.yaxis.set_ticks([50,100,150,200,250,300])
+plt.plot(xt, smooth_median,label = "median", color='r')
+plt.plot(xt, smooth_min,label = "min", color='g')
+plt.plot(xt, smooth_max,label = "max", color='b')
+plt.fill_between(xt, smooth_min, smooth_max, alpha=.1, color='r')
 plt.grid(True)
 plt.ylabel("reward")
 plt.xlabel("steps")
