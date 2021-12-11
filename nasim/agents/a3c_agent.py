@@ -128,7 +128,7 @@ def main():
     args.outdir = experiments.prepare_output_dir(args, args.outdir)
 
     def make_env(process_idx, test):
-        env = nasim.load("../scenarios/own_S/Permutations/Own_S_"+ str(process_idx%args.num_env) +".yaml", flat_actions=True, flat_obs=True)
+        env = nasim.load("../scenarios/own_S/Permutations/Own_S_"+ str(process_idx%2) +".yaml", flat_actions=True, flat_obs=True)
         # Use different random seeds for train and test envs
         #process_seed = int(process_seeds[process_idx])
         #env_seed = 2 ** 32 - 1 - process_seed if test else process_seed
@@ -167,7 +167,7 @@ def main():
         opt.add_hook(NonbiasWeightDecay(args.weight_decay))
 
     agent = a3c.A3C(model, opt, t_max=args.t_max, gamma=0.99,
-                    beta=args.beta, act_deterministically=True)
+                    beta=args.beta, act_deterministically=False)
     if args.load:
         agent.load(args.load)
 
