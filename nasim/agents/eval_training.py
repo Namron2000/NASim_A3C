@@ -13,6 +13,7 @@ file = open(filepath, 'r')
 #skip headers
 file.readline()
 data = np.loadtxt(file)
+file.close()
 xt = data[:,0]
 median = data[:,4]
 min = data[:,7]
