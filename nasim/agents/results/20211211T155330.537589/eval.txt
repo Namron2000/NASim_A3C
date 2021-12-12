@@ -1,0 +1,200 @@
+python3 a3c_agent.py 24 --eval-interval 500 --eval-n-runs 5 --steps 8000000 --t-max 500 --arch FFMellowmax --num-env 24 --demo --load results/20211211T155330.537589/8000000_finish/
+a3c.A3C(model, opt, t_max=args.t_max, gamma=0.99, beta=args.beta, act_deterministically=False)
+trained on 20 environments
+
+Environment: 0
+process_idx =  0
+/home/kali/.local/lib/python3.9/site-packages/chainerrl/functions/mellowmax.py:60: RuntimeWarning: overflow encountered in exp
+  return np.sum(np.exp(y * adv) * adv)
+INFO:chainerrl.experiments.evaluator:evaluation episode 0 length:36 R:198.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 1 length:8 R:276.0
+/home/kali/.local/lib/python3.9/site-packages/chainerrl/functions/mellowmax.py:60: RuntimeWarning: overflow encountered in multiply
+  return np.sum(np.exp(y * adv) * adv)
+INFO:chainerrl.experiments.evaluator:evaluation episode 2 length:44 R:184.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 3 length:10 R:272.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 4 length:15 R:263.0
+n_runs: 5 mean: 238.6 median: 263.0 stdev 43.986361522635626
+Environment: 1
+process_idx =  1
+INFO:chainerrl.experiments.evaluator:evaluation episode 0 length:63 R:131.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 1 length:37 R:203.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 2 length:43 R:179.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 3 length:41 R:193.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 4 length:29 R:223.0
+n_runs: 5 mean: 185.8 median: 193.0 stdev 34.57166469813104
+Environment: 2
+process_idx =  2
+INFO:chainerrl.experiments.evaluator:evaluation episode 0 length:67 R:117.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 1 length:17 R:255.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 2 length:17 R:251.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 3 length:48 R:162.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 4 length:45 R:181.0
+n_runs: 5 mean: 193.2 median: 181.0 stdev 59.34812549693545
+Environment: 3
+process_idx =  3
+INFO:chainerrl.experiments.evaluator:evaluation episode 0 length:10 R:270.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 1 length:25 R:235.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 2 length:32 R:212.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 3 length:16 R:256.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 4 length:29 R:223.0
+n_runs: 5 mean: 239.2 median: 235.0 stdev 23.721298446754556
+Environment: 4
+process_idx =  4
+INFO:chainerrl.experiments.evaluator:evaluation episode 0 length:21 R:249.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 1 length:5 R:285.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 2 length:16 R:256.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 3 length:12 R:268.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 4 length:13 R:263.0
+n_runs: 5 mean: 264.2 median: 263.0 stdev 13.663820841916802
+Environment: 5
+process_idx =  5
+INFO:chainerrl.experiments.evaluator:evaluation episode 0 length:14 R:260.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 1 length:39 R:185.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 2 length:38 R:198.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 3 length:23 R:235.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 4 length:17 R:251.0
+n_runs: 5 mean: 225.8 median: 235.0 stdev 32.88920795641026
+Environment: 6
+process_idx =  6
+INFO:chainerrl.experiments.evaluator:evaluation episode 0 length:38 R:200.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 1 length:45 R:183.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 2 length:7 R:279.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 3 length:39 R:193.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 4 length:51 R:161.0
+n_runs: 5 mean: 203.2 median: 193.0 stdev 44.85755231842237
+Environment: 7
+process_idx =  7
+INFO:chainerrl.experiments.evaluator:evaluation episode 0 length:14 R:260.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 1 length:16 R:252.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 2 length:20 R:242.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 3 length:11 R:271.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 4 length:17 R:253.0
+n_runs: 5 mean: 255.6 median: 253.0 stdev 10.737783756436894
+Environment: 8
+process_idx =  8
+INFO:chainerrl.experiments.evaluator:evaluation episode 0 length:39 R:191.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 1 length:29 R:219.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 2 length:13 R:263.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 3 length:5 R:285.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 4 length:17 R:251.0
+n_runs: 5 mean: 241.8 median: 251.0 stdev 37.083689136869864
+Environment: 9
+process_idx =  9
+INFO:chainerrl.experiments.evaluator:evaluation episode 0 length:10 R:274.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 1 length:10 R:270.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 2 length:13 R:261.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 3 length:12 R:264.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 4 length:20 R:242.0
+n_runs: 5 mean: 262.2 median: 264.0 stdev 12.377398757412642
+Environment: 10
+process_idx =  10
+INFO:chainerrl.experiments.evaluator:evaluation episode 0 length:9 R:273.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 1 length:7 R:281.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 2 length:8 R:280.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 3 length:27 R:227.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 4 length:25 R:233.0
+n_runs: 5 mean: 258.8 median: 273.0 stdev 26.55560204551951
+Environment: 11
+process_idx =  11
+INFO:chainerrl.experiments.evaluator:evaluation episode 0 length:18 R:246.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 1 length:23 R:237.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 2 length:18 R:252.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 3 length:10 R:272.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 4 length:9 R:273.0
+n_runs: 5 mean: 256.0 median: 252.0 stdev 15.98436736314578
+Environment: 12
+process_idx =  12
+INFO:chainerrl.experiments.evaluator:evaluation episode 0 length:3 R:291.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 1 length:11 R:273.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 2 length:3 R:291.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 3 length:3 R:291.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 4 length:3 R:291.0
+n_runs: 5 mean: 287.4 median: 291.0 stdev 8.049844718999243
+Environment: 13
+process_idx =  13
+INFO:chainerrl.experiments.evaluator:evaluation episode 0 length:21 R:243.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 1 length:21 R:245.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 2 length:20 R:246.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 3 length:11 R:267.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 4 length:41 R:191.0
+n_runs: 5 mean: 238.4 median: 245.0 stdev 28.22764602300376
+Environment: 14
+process_idx =  14
+INFO:chainerrl.experiments.evaluator:evaluation episode 0 length:7 R:279.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 1 length:9 R:273.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 2 length:19 R:249.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 3 length:14 R:260.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 4 length:25 R:231.0
+n_runs: 5 mean: 258.4 median: 260.0 stdev 19.23018460649819
+Environment: 15
+process_idx =  15
+INFO:chainerrl.experiments.evaluator:evaluation episode 0 length:29 R:219.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 1 length:17 R:251.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 2 length:6 R:282.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 3 length:21 R:243.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 4 length:7 R:279.0
+n_runs: 5 mean: 254.8 median: 251.0 stdev 26.27165773224065
+Environment: 16
+process_idx =  16
+INFO:chainerrl.experiments.evaluator:evaluation episode 0 length:16 R:254.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 1 length:19 R:247.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 2 length:12 R:264.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 3 length:12 R:266.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 4 length:17 R:253.0
+n_runs: 5 mean: 256.8 median: 254.0 stdev 7.981227975693965
+Environment: 17
+process_idx =  17
+INFO:chainerrl.experiments.evaluator:evaluation episode 0 length:11 R:269.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 1 length:27 R:223.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 2 length:8 R:278.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 3 length:15 R:255.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 4 length:12 R:268.0
+n_runs: 5 mean: 258.6 median: 268.0 stdev 21.524404753674375
+Environment: 18
+process_idx =  18
+INFO:chainerrl.experiments.evaluator:evaluation episode 0 length:30 R:224.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 1 length:9 R:273.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 2 length:10 R:272.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 3 length:6 R:282.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 4 length:16 R:254.0
+n_runs: 5 mean: 261.0 median: 272.0 stdev 23.043437243605826
+Environment: 19
+process_idx =  19
+INFO:chainerrl.experiments.evaluator:evaluation episode 0 length:27 R:227.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 1 length:43 R:185.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 2 length:25 R:231.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 3 length:18 R:248.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 4 length:28 R:226.0
+n_runs: 5 mean: 223.4 median: 227.0 stdev 23.22283359110167
+Environment: 20
+process_idx =  20
+INFO:chainerrl.experiments.evaluator:evaluation episode 0 length:132 R:-62.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 1 length:54 R:158.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 2 length:174 R:-176.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 3 length:14 R:260.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 4 length:53 R:167.0
+n_runs: 5 mean: 69.4 median: 158.0 stdev 181.10162892696465
+Environment: 21
+process_idx =  21
+INFO:chainerrl.experiments.evaluator:evaluation episode 0 length:37 R:195.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 1 length:21 R:241.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 2 length:14 R:258.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 3 length:47 R:183.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 4 length:14 R:260.0
+n_runs: 5 mean: 227.4 median: 241.0 stdev 36.07353600633018
+Environment: 22
+process_idx =  22
+INFO:chainerrl.experiments.evaluator:evaluation episode 0 length:55 R:147.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 1 length:26 R:232.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 2 length:26 R:228.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 3 length:30 R:222.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 4 length:60 R:140.0
+n_runs: 5 mean: 193.8 median: 222.0 stdev 46.12157846388174
+Environment: 23
+process_idx =  23
+INFO:chainerrl.experiments.evaluator:evaluation episode 0 length:47 R:177.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 1 length:44 R:186.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 2 length:24 R:234.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 3 length:16 R:256.0
+INFO:chainerrl.experiments.evaluator:evaluation episode 4 length:23 R:233.0
+n_runs: 5 mean: 217.2 median: 233.0 stdev 34.01029255975315
