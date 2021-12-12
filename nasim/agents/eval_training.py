@@ -6,7 +6,7 @@ from sklearn.linear_model import RANSACRegressor
 from sklearn.linear_model import LinearRegression
 from sklearn.preprocessing import PolynomialFeatures
 from scipy.signal import savgol_filter
-filepath = "./results/trained on 2 envs not det/scores.txt"
+filepath = "./results/trained_24_1/scores.txt"
 
 #this is literally not necessary but np > python
 file = open(filepath, 'r')

@@ -1,0 +1,1 @@
+train_thing.py 12 --eval-interval 500 --eval-n-runs 200 --steps 4000000 --num-env 2

@@ -1,0 +1,125 @@
+On branch Eneko_A3C
+Your branch is up to date with 'origin/Eneko_A3C'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   ../../.gitignore
+	modified:   ../../CODE_OF_CONDUCT.md
+	modified:   ../../CONTRIBUTING.rst
+	modified:   ../../LICENSE.md
+	modified:   ../../README.rst
+	modified:   ../../docs/Makefile
+	modified:   ../../docs/make.bat
+	modified:   ../../docs/source/community/acknowledgements.rst
+	modified:   ../../docs/source/community/contact.rst
+	modified:   ../../docs/source/community/development.rst
+	modified:   ../../docs/source/community/distributing.rst
+	modified:   ../../docs/source/community/index.rst
+	modified:   ../../docs/source/community/license.rst
+	modified:   ../../docs/source/conf.py
+	modified:   ../../docs/source/explanations/index.rst
+	modified:   ../../docs/source/explanations/scenario_generation.rst
+	modified:   ../../docs/source/index.rst
+	modified:   ../../docs/source/reference/agents/index.rst
+	modified:   ../../docs/source/reference/envs/actions.rst
+	modified:   ../../docs/source/reference/envs/environment.rst
+	modified:   ../../docs/source/reference/envs/host_vector.rst
+	modified:   ../../docs/source/reference/envs/index.rst
+	modified:   ../../docs/source/reference/envs/observation.rst
+	modified:   ../../docs/source/reference/envs/state.rst
+	modified:   ../../docs/source/reference/index.rst
+	modified:   ../../docs/source/reference/load.rst
+	modified:   ../../docs/source/reference/scenarios/benchmark_scenarios.rst
+	modified:   ../../docs/source/reference/scenarios/benchmark_scenarios_agent_scores.csv
+	modified:   ../../docs/source/reference/scenarios/benchmark_scenarios_table.csv
+	modified:   ../../docs/source/reference/scenarios/generator.rst
+	modified:   ../../docs/source/reference/scenarios/index.rst
+	modified:   ../../docs/source/tutorials/creating_scenarios.rst
+	modified:   ../../docs/source/tutorials/environment.rst
+	modified:   ../../docs/source/tutorials/gym_load.rst
+	modified:   ../../docs/source/tutorials/index.rst
+	modified:   ../../docs/source/tutorials/installation.rst
+	modified:   ../../docs/source/tutorials/loading.rst
+	modified:   ../../docs/source/tutorials/scenarios.rst
+	modified:   ../__init__.py
+	modified:   A3C_agent.py
+	modified:   bruteforce_agent.py
+	modified:   dqn_agent.py
+	modified:   keyboard_agent.py
+	modified:   ql_agent.py
+	modified:   ql_replay_agent.py
+	modified:   random_agent.py
+	modified:   ../demo.py
+	modified:   ../envs/__init__.py
+	modified:   ../envs/action.py
+	modified:   ../envs/environment.py
+	modified:   ../envs/gym_env.py
+	modified:   ../envs/host_vector.py
+	modified:   ../envs/network.py
+	modified:   ../envs/observation.py
+	modified:   ../envs/render.py
+	modified:   ../envs/state.py
+	modified:   ../envs/utils.py
+	modified:   ../own_demo.py
+	modified:   ../scenarios/__init__.py
+	modified:   ../scenarios/benchmark/__init__.py
+	modified:   ../scenarios/benchmark/generated.py
+	modified:   ../scenarios/benchmark/medium-multi-site.yaml
+	modified:   ../scenarios/benchmark/medium-single-site.yaml
+	modified:   ../scenarios/benchmark/medium.yaml
+	modified:   ../scenarios/benchmark/small-honeypot.yaml
+	modified:   ../scenarios/benchmark/small-linear.yaml
+	modified:   ../scenarios/benchmark/small.yaml
+	modified:   ../scenarios/benchmark/tiny-hard.yaml
+	modified:   ../scenarios/benchmark/tiny-small.yaml
+	modified:   ../scenarios/benchmark/tiny.yaml
+	modified:   ../scenarios/generator.py
+	modified:   ../scenarios/host.py
+	modified:   ../scenarios/loader.py
+	modified:   ../scenarios/own_S/Own_S.yaml
+	modified:   ../scenarios/own_S/Permutations/Own_S_0.yaml
+	modified:   ../scenarios/own_S/Permutations/Own_S_1.yaml
+	modified:   ../scenarios/own_S/Permutations/Own_S_10.yaml
+	modified:   ../scenarios/own_S/Permutations/Own_S_11.yaml
+	modified:   ../scenarios/own_S/Permutations/Own_S_12.yaml
+	modified:   ../scenarios/own_S/Permutations/Own_S_13.yaml
+	modified:   ../scenarios/own_S/Permutations/Own_S_14.yaml
+	modified:   ../scenarios/own_S/Permutations/Own_S_15.yaml
+	modified:   ../scenarios/own_S/Permutations/Own_S_16.yaml
+	modified:   ../scenarios/own_S/Permutations/Own_S_17.yaml
+	modified:   ../scenarios/own_S/Permutations/Own_S_18.yaml
+	modified:   ../scenarios/own_S/Permutations/Own_S_19.yaml
+	modified:   ../scenarios/own_S/Permutations/Own_S_2.yaml
+	modified:   ../scenarios/own_S/Permutations/Own_S_20.yaml
+	modified:   ../scenarios/own_S/Permutations/Own_S_21.yaml
+	modified:   ../scenarios/own_S/Permutations/Own_S_22.yaml
+	modified:   ../scenarios/own_S/Permutations/Own_S_23.yaml
+	modified:   ../scenarios/own_S/Permutations/Own_S_3.yaml
+	modified:   ../scenarios/own_S/Permutations/Own_S_4.yaml
+	modified:   ../scenarios/own_S/Permutations/Own_S_5.yaml
+	modified:   ../scenarios/own_S/Permutations/Own_S_6.yaml
+	modified:   ../scenarios/own_S/Permutations/Own_S_7.yaml
+	modified:   ../scenarios/own_S/Permutations/Own_S_8.yaml
+	modified:   ../scenarios/own_S/Permutations/Own_S_9.yaml
+	modified:   ../scenarios/own_S/Permutations/create_permuation.py
+	modified:   ../scenarios/scenario.py
+	modified:   ../scenarios/utils.py
+	modified:   ../scripts/describe_scenarios.py
+	modified:   ../scripts/run_dqn_policy.py
+	modified:   ../scripts/run_random_benchmarks.py
+	modified:   ../scripts/train_dqn.py
+	modified:   ../scripts/visualize_graph.py
+	modified:   ../../requirements.txt
+	modified:   ../../setup.py
+	modified:   ../../test/test_bruteforce.py
+	modified:   ../../test/test_generator.py
+	modified:   ../../test/test_gym_bruteforce.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	lulw/
+	results/
+	train_thing.py
+
+no changes added to commit (use "git add" and/or "git commit -a")

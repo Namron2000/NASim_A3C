@@ -1,0 +1,1 @@
+train_thing.py 24 --eval-interval 500 --eval-n-runs 5 --steps 5000000 --num-env 24 --load /home/kali/Desktop/project/NASim_A3C/nasim/agents/results/20211211T091454.843155/best/
